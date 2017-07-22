@@ -5,7 +5,7 @@
   -var counter=0
   each _, i in Array(120)
     -var d = deputies[i];
-    .deputy.deputy-arch(class="#{d.party}" style="left: #{dict[i].left}; top: #{dict[i].top}")
+    .deputy.deputy-arch(class="#{d.partido}" data-index="#{i}" style="left: #{dict[i].left}; top: #{dict[i].top}")
 
 #info-window.modal.fade(role="dialog")
   .modal-dialog
@@ -15,7 +15,9 @@
         .avatar
         .header-info
           p Nombre: 
+            span.name
           p Partido: 
+            span.party
       .modal-body
         table
           tr

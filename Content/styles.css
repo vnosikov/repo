@@ -54,8 +54,37 @@
   background-color: #000080;
 }
 
+.deputy.AMPL {
+  background-color: #ffd700;
+}
+
+.deputy.EVOP {
+  background-color: #00ffff;
+}
+
+.deputy.IND {
+  background-color: #808080;
+}
+
+.deputy.IC {
+  background-color: #800080;
+}
+
+.deputy.PL {
+  background-color: #c9dc87;
+}
+
+.deputy.PRSD {
+  background-color: #5d7e3f;
+}
+
+.deputy.REVD {
+  background-color: #daa520;
+}
+
+
 #info-window .modal-dialog {
-  width: 300px;
+  width: 400px;
 }
 
 #info-window .avatar {
