@@ -54,6 +54,9 @@ $(document).ready(function(){
       $('#info-window').modal('show');
       $('#info-window .name').text(deputy.nombre);
       $('#info-window .party').text(deputy.partido);
+
+      var imgPath = 'https://www.camara.cl' + deputy.img_url;
+      $('#info-window .avatar img').attr('src', imgPath);
     });
   }
 });
