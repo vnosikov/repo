@@ -1,0 +1,26 @@
+-var deputies = locals
+
+.chamber
+  -var counter=0
+  each _, i in Array(20)
+    .deputies-set(class="set-#{i}")
+      each _, j in Array(6)
+        -var d = deputies[i * 6 + j]
+        .deputy(class="#{d.party}")
+
+#info-window.modal.fade(role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal") &times
+        .avatar
+        .header-info
+          p Nombre: 
+          p Partido: 
+      .modal-body
+        table
+          tr
+            td Voto
+            td A favor
+      .modal-footer
+         button.btn.btn-default(type="button" data-dismiss="modal") Cerrar

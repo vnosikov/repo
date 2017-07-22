@@ -1,0 +1,14 @@
+{
+  "name": "VotaFrontend",
+  "version": "0.0.0",
+  "description": "Compilador de templates jade y sass",
+  "main": "compile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xxx",
+  "license": "Closed",
+  "dependencies": {
+    "jade": "~1.11.0"
+  }
+}
