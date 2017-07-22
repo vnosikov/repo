@@ -1,0 +1,25 @@
+-var deputies = locals.deputies
+-var coordDict = locals.dict 
+
+.chamber-arch
+  -var counter=0
+  each _, i in Array(120)
+    -var d = deputies[i];
+    .deputy.deputy-arch(class="#{d.party}" style="left: #{dict[i].left}; top: #{dict[i].top}")
+
+#info-window.modal.fade(role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal") &times
+        .avatar
+        .header-info
+          p Nombre: 
+          p Partido: 
+      .modal-body
+        table
+          tr
+            td Voto
+            td A favor
+      .modal-footer
+         button.btn.btn-default(type="button" data-dismiss="modal") Cerrar

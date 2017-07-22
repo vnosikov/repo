@@ -81,6 +81,41 @@ buf.push("</div>");
 
 buf.push("</div><div id=\"info-window\" role=\"dialog\" class=\"modal fade\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" data-dismiss=\"modal\" class=\"close\">&times</button><div class=\"avatar\"></div><div class=\"header-info\"><p>Nombre: </p><p>Partido: </p></div></div><div class=\"modal-body\"><table><tr><td>Voto</td><td>A favor</td></tr></table></div><div class=\"modal-footer\"><button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-default\">Cerrar</button></div></div></div></div>");}.call(this,"Array" in locals_for_with?locals_for_with.Array:typeof Array!=="undefined"?Array:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
 };
+window.templates['camara_arch'] = function(locals) {
+var buf = [];
+var jade_mixins = {};
+var jade_interp;
+;var locals_for_with = (locals || {});(function (Array, dict, undefined) {
+var deputies = locals.deputies
+var coordDict = locals.dict 
+buf.push("<div class=\"chamber-arch\">");
+var counter=0
+// iterate Array(120)
+;(function(){
+  var $$obj = Array(120);
+  if ('number' == typeof $$obj.length) {
+
+    for (var i = 0, $$l = $$obj.length; i < $$l; i++) {
+      var _ = $$obj[i];
+
+var d = deputies[i];
+buf.push("<div" + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.party) + ""], [null,null,true])) + "></div>");
+    }
+
+  } else {
+    var $$l = 0;
+    for (var i in $$obj) {
+      $$l++;      var _ = $$obj[i];
+
+var d = deputies[i];
+buf.push("<div" + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.party) + ""], [null,null,true])) + "></div>");
+    }
+
+  }
+}).call(this);
+
+buf.push("</div><div id=\"info-window\" role=\"dialog\" class=\"modal fade\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" data-dismiss=\"modal\" class=\"close\">&times</button><div class=\"avatar\"></div><div class=\"header-info\"><p>Nombre: </p><p>Partido: </p></div></div><div class=\"modal-body\"><table><tr><td>Voto</td><td>A favor</td></tr></table></div><div class=\"modal-footer\"><button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-default\">Cerrar</button></div></div></div></div>");}.call(this,"Array" in locals_for_with?locals_for_with.Array:typeof Array!=="undefined"?Array:undefined,"dict" in locals_for_with?locals_for_with.dict:typeof dict!=="undefined"?dict:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+};
 window.templates['test'] = function(locals) {
 var buf = [];
 var jade_mixins = {};
