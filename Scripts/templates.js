@@ -99,7 +99,7 @@ var counter=0
       var _ = $$obj[i];
 
 var d = deputies[i];
-buf.push("<div" + (jade.attr("data-index", "" + (i) + "", true, false)) + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.partido) + ""], [null,null,true])) + "></div>");
+buf.push("<div" + (jade.attr("data-index", "" + (i) + "", true, false)) + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.attr("title", "" + (d.nombre || '') + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.partido) + ""], [null,null,true])) + "></div>");
     }
 
   } else {
@@ -108,7 +108,7 @@ buf.push("<div" + (jade.attr("data-index", "" + (i) + "", true, false)) + (jade.
       $$l++;      var _ = $$obj[i];
 
 var d = deputies[i];
-buf.push("<div" + (jade.attr("data-index", "" + (i) + "", true, false)) + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.partido) + ""], [null,null,true])) + "></div>");
+buf.push("<div" + (jade.attr("data-index", "" + (i) + "", true, false)) + (jade.attr("style", "left: " + (dict[i].left) + "; top: " + (dict[i].top) + "", true, false)) + (jade.attr("title", "" + (d.nombre || '') + "", true, false)) + (jade.cls(['deputy','deputy-arch',"" + (d.partido) + ""], [null,null,true])) + "></div>");
     }
 
   }

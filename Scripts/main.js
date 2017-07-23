@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $.ajax({
+  /*$.ajax({
     url: "http://159.203.126.42:9000/diputados/all",
     dataType: "jsonp",
     jsonpCallback: 'callback',
@@ -8,7 +8,10 @@ $(document).ready(function(){
       app.deputiesList = response;
       startWorking()
     }
-  });
+  });*/
+
+  app.deputiesList = app.generateDeputies();
+  startWorking();
 
   function startWorking() {
     app.deputiesList.sort(function(a,b){

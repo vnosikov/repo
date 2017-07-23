@@ -8,32 +8,33 @@
       var result = [];
       for (var i=0; i<11; i++) {
         result.push({
-          party: 'PC'
+          partido: 'PC',
+          nombre: 'Rojo Comunista'
         })
       }
       for (var i=0; i<19; i++) {
         result.push({
-          party: 'PS'
+          partido: 'PS'
         })
       }
       for (var i=0; i<17; i++) {
         result.push({
-          party: 'PPD'
+          partido: 'PPD'
         })
       }
       for (var i=0; i<23; i++) {
         result.push({
-          party: 'DC'
+          partido: 'DC'
         })
       }
       for (var i=0; i<18; i++) {
         result.push({
-          party: 'RN'
+          partido: 'RN'
         })
       }
       for (var i=0; i<32; i++) {
         result.push({
-          party: 'UDI'
+          partido: 'UDI'
         })
       }
 
