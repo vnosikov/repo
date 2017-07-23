@@ -1,8 +1,22 @@
--var votes = locals;
+-var votes = locals.votes;
+-var dict= locals.dict;
 
-table
+table.vote-table
+  tr
+    td
+    td Voto de Persona
+    td Voto de Partido
   each v in votes
     tr
-      td #{v.votacion_name}
-      td #{v.vote}
-     
+      td.name #{v.votacion_name}
+      td.vote(class="#{dict[v.vote]}") #{v.vote}
+      td.vote(class="#{dict[v.vote_partido]}") #{v.vote_partido}
+  
+  tr
+    td.name Otro Ley
+    td ?????
+    td ?????
+  tr
+    td.name Ley Importante
+     td ??????
+     td ??????

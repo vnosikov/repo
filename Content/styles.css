@@ -82,10 +82,9 @@
   background-color: #00008b;
 }
 
-
 #info-window .modal-dialog {
   margin-left: 10%;
-  width: 480px;
+  /*width: 480px;*/
 }
 
 #info-window .avatar {
@@ -106,7 +105,121 @@
   margin-top: 10px;
 }
 
-#info-window table {
+#info-window table.vote-table {
   padding: 20px;
   width: 100%
+}
+
+#info-window table.vote-table {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#info-window tr:first-of-type td {
+  color: #9FA9BA;
+}
+
+#info-window table.vote-table td {
+  border: 1px solid #979797;
+  background-color: #F9F9F9;
+  padding: 10px;
+}
+
+#info-window p {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+#info-window p.header {
+  color: #9FA9BA;
+  font-weight: 500;
+}
+
+#info-window p.party {
+  color: #000000;
+  font-weight: bold;
+}
+
+#info-window p.name {
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+
+#info-window .modal-header p {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 34px;
+}
+
+#info-window table.info-table {
+  min-height: 60px;
+  width: calc(100% + 32px);
+  margin-top: 30px;
+  margin-left: -16px;
+  box-sizing: border-box;
+}
+
+#info-window table.info-table td {
+  border: 1px solid #979797;
+  background-color: #F9F9F9;
+  width: 33%;
+}
+
+#info-window table.info-table p {
+  color: #9FA9BA;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+#info-window table.info-table p.value {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#info-window p.vote-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 39px;
+}
+
+#info-window table.vote-table td.vote.favor {
+  background-color: #76ff03;
+}
+
+#info-window table.vote-table td.vote.contra {
+  background-color: #d0021b;
+}
+
+#info-window table.vote-table td.vote.abstencion {
+  background-color: #4babce;
+}
+
+#info-window table.vote-table td.vote.pareo {
+  background-color: #a37da9;
+}
+
+#info-window table.vote-table td.vote.ausente {
+  background-color: #32343d;
+}
+
+#info-window table.vote-table td.vote.novoto {
+  background-color: #808080;
 }

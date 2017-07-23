@@ -12,14 +12,30 @@
     .modal-content
       .modal-header
         button.close(type="button" data-dismiss="modal") &times
+        p PERFIL DEL DIPUTADO
+      .modal-body
         .avatar
           img
         .header-info
-          p Nombre: 
-            span.name
-          p Partido: 
-            span.party
-      .modal-body
-        //table_votes.jade will be added here
+          p.header Nombre: 
+          p.name
+          p.header Partido: 
+          p.party
+        
+        table.info-table
+          tr
+            td
+              p PERÍODOS
+              p.value.periods 2014-2018
+            td
+              p REGIÓN
+              p.value.region
+            td
+              p DISTRITO
+              p.value.district
+        p.vote-info Votos:
+        .votation
+        
+          //table_votes.jade will be added here
       .modal-footer
          button.btn.btn-default(type="button" data-dismiss="modal") Cerrar

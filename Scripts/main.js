@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /*$.ajax({
+  $.ajax({
     url: "http://159.203.126.42:9000/diputados/all",
     dataType: "jsonp",
     jsonpCallback: 'callback',
@@ -8,10 +8,10 @@ $(document).ready(function(){
       app.deputiesList = response;
       startWorking()
     }
-  });*/
-
-  app.deputiesList = app.generateDeputies();
-  startWorking();
+  });
+  //
+  // app.deputiesList = app.generateDeputies();
+  // startWorking();
 
   function startWorking() {
     app.deputiesList.sort(function(a,b){
@@ -46,6 +46,11 @@ $(document).ready(function(){
     $('.deputy').click(function(){
       var deputy = app.deputiesList[$(this).data('index')];
 
+      // showModal(deputy, [{
+      //   votacion_name: 'Ley de Aborto',
+      //   vote: Math.random() < 0.5 ? 'A favor' : 'En Contra'
+      // }]);
+
       $.ajax({
         url: 'http://159.203.126.42:9000/votes/name/' + deputy.nombre,
         dataType: "jsonp",
@@ -68,8 +73,23 @@ $(document).ready(function(){
     var imgPath = 'https://www.camara.cl' + deputy.img_url;
     $('#info-window .avatar img').attr('src', imgPath);
 
-    var table = window.templates['table_votes'](votes);
-    $('#info-window .modal-body').empty();
-    $(table).appendTo('#info-window .modal-body');
+    // $('#info-window .profession').text(deputy.profesion);
+    $('#info-window .region').text(deputy.region);
+    $('#info-window .district').text(deputy.distrito);
+
+
+    var table = window.templates['table_votes']({
+      votes: votes,
+      dict: {
+        'A favor': 'favor',
+        'En contra': 'contra',
+        'Abstencion': 'abstencion',
+        'Pareo': 'pareo',
+        'Ausente': 'ausente',
+        'No voto': 'novoto'
+      }
+    });
+    $('#info-window .votation').empty();
+    $(table).appendTo('#info-window .votation');
   }
 });
