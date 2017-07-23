@@ -31,55 +31,55 @@
 }
 
 .deputy.PC {
-  background-color: #b85b39;
-}
-
-.deputy.PS {
-  background-color: #ff0000;
-}
-
-.deputy.PPD {
-  background-color: #ff8c00;
-}
-
-.deputy.DC {
-  background-color: #1e90ff;
-}
-
-.deputy.RN {
-  background-color: #3333FF;
-}
-
-.deputy.UDI {
-  background-color: #000080;
-}
-
-.deputy.AMPL {
-  background-color: #ffd700;
-}
-
-.deputy.EVOP {
-  background-color: #00ffff;
-}
-
-.deputy.IND {
-  background-color: #808080;
+  background-color: #8B0000;
 }
 
 .deputy.IC {
   background-color: #800080;
 }
 
-.deputy.PL {
-  background-color: #c9dc87;
+.deputy.PS {
+  background-color: #ff0000;
 }
 
 .deputy.PRSD {
-  background-color: #5d7e3f;
+  background-color: #008080;
+}
+
+.deputy.PPD {
+  background-color: #ffa500;
+}
+
+.deputy.DC {
+  background-color: #1e90ff;
 }
 
 .deputy.REVD {
-  background-color: #daa520;
+  background-color: #1d4c4f;
+}
+
+.deputy.PL {
+  background-color: #ddff55;
+}
+
+.deputy.IND {
+  background-color: #808080;
+}
+
+.deputy.AMPL {
+  background-color: #f0cf00;
+}
+
+.deputy.EVOP {
+  background-color: #00bfff;
+}
+
+.deputy.RN {
+  background-color: #135bb8;
+}
+
+.deputy.UDI {
+  background-color: #00008b;
 }
 
 
